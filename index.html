@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/images/grassBlock.webp" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>MC Team</title>
+  </head>
+  <body>
+    <header>
+      <!-- Start NavBar -->
+      <nav>
+        <div
+          class="container mx-auto pt-7 md:flex justify-between items-center md:px-6"
+        >
+          <!-- Logo -->
+          <div class="flex md:block justify-between items-center">
+            <h1 class="font-bold text-2xl text-shadow">MC Team</h1>
+            <i
+              class="icon block md:hidden text-2xl cursor-pointer bx bx-menu"
+            ></i>
+          </div>
+
+          <!-- Menu -->
+          <ul
+            class="menu hidden flex-col md:flex-row items-center bg-white md:bg-transparent mt-6 md:mt-0 w-full md:w-fit"
+          >
+            <li>
+              <a
+                class="md:mr-10 p-2 text-lg md:text-shadow text-black md:text-white block my-5 md:my-0"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:mr-10 p-2 text-lg md:text-shadow text-black md:text-white block mb-5 md:mb-0"
+                href="#features"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:text-lg md:text-shadow text-black md:text-white block my-5 md:my-0"
+                href="#about"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End NavBar -->
+
+      <!-- Start Landing -->
+      <div
+        class="l-height pt-8 md:pt-0 container mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- Text -->
+        <div class="md:w-1/2 md:ml-auto mt-auto md:mt-0 mb-6 md:mb-0">
+          <h1
+            class="font-bold text-3xl sm:text-5xl md:text-6xl text-shadow text-center md:text-left"
+          >
+            Eat, Craft<br />
+            and Survive.
+          </h1>
+        </div>
+
+        <!-- Img -->
+        <div class="w-[70%] mb-auto md:mb-0 md:w-1/4 md:mr-auto">
+          <img
+            class="w-full top-down-animation"
+            src="./src/images/minecraft-steve.png"
+            alt="Landing Image"
+          />
+        </div>
+      </div>
+      <!-- End Landing -->
+    </header>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white !important;
+}
+
+.open {
+  display: flex !important;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header {
+  background-image: linear-gradient(rgb(1 1 1 / 56%), rgb(1 1 1 / 56%)),
+    url("../src/images/bg-4.jfif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 12px #000000c9;
+}
+
+.l-height {
+  height: calc(100vh - 100px);
+}
+
+.top-down-animation {
+  animation: topDown 4s infinite ease-in-out;
+}
+
+@keyframes topDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    z-index: 9999;
+    position: absolute;
+    border-radius: 10px;
+    border-top-right-radius: 3px;
+    width: 84%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menu::after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-width: 20px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -39px;
+    right: 0px;
+  }
+}
